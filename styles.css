@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradient {
+    form {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+@keyframes number-scale {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes shift-left {
+    0% {
+        opacity: 1;
+        right: 0;
+    }
+    100% {
+        opacity: 0;
+        right: 100px;
+    }
+}
+
+@keyframes shift-right {
+    0% {
+        opacity: 0;
+        left: 100px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes shift-right-2 {
+    0% {
+        opacity: 1;
+        left: 0;
+    }
+    100% {
+        opacity: 0;
+        left: 100px;
+    }
+}
+
+@keyframes shift-left-2 {
+    0% {
+        opacity: 0;
+        right: 100px;
+    }
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.shift-left-animation {
+    animation: shift-left .7s ease-in-out forwards;
+}
+
+.shift-right-animation {
+    animation: shift-right .7s ease-in-out forwards;
+}
+
+.shift-left-2-animation {
+    animation: shift-left-2 .7s ease-in-out forwards;
+}
+
+.shift-right-2-animation {
+    animation: shift-right-2 .7s ease-in-out forwards;
+}
+
+.scale-up {
+    animation: number-scale .7s ease-in-out;
+}
+
+body {
+    background-image: linear-gradient(45deg, 
+    #eb4034,
+    #ff7082, 
+    #f59993,
+    #b1d5fa,
+    #5ca9f7,
+    #0f83f7);
+    background-size: 250%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: left;
+    animation: gradient 10s infinite alternate;
+}
+
+.calender {
+    width: 40%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+}
+
+.calender-header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding: 3%;
+}
+
+#month {
+    position: relative;
+}
+
+.calender-header .arrow {
+    width: 15%;
+    font-size: 2.5rem;
+    border: none;
+    background: transparent;
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
+}
+
+.calender .calender-days{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+.calender .calender-days .day{
+    text-align: center;
+}
+
+.calender .calender-days .day p{
+    font-size: 20px;
+    margin: 12px 0;
+}

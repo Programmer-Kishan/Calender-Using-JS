@@ -14,3 +14,6 @@ open the website on your default browser
 
 ### If you are not using VS Code
 If Your are not using VS code simply click on the index.html file and it will open it in your default browser.
+
+## Video of the application
+https://github.com/Programmer-Kishan/Calender-Using-JS/assets/69651170/e61ba0db-7d57-4402-bbbe-fed870bb4c69
